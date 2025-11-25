@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wahl México - Cortadoras y Recortadoras Profesionales</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Pantalla de Carga -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-container">
+            <div class="loading-logo">
+                <div class="logo-text">WAHL</div>
+                <div class="logo-subtitle">MÉXICO</div>
+            </div>
+            <div class="loader"></div>
+            <p class="loading-text">Cargando...</p>
+        </div>
+    </div>
+
+    <!-- Accesibilidad -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+    
+    <!-- Christmas Discount Banner (NO fijo) - ARRIBA -->
+    <div class="christmas-banner">
+        <p class="banner-text banner-text-1">APROVECHA NUESTROS DESCUENTOS NAVIDEÑOS</p>
+        <p class="banner-text banner-text-2">BIENVENIDO A WAHL MÉXICO</p>
+        <p class="banner-text banner-text-3">DESCUENTOS NAVIDEÑOS DEL 1 AL 25 DE DICIEMBRE</p>
+    </div>
+    
+    <!-- Header Top - Mi Cuenta (NO fijo) -->
+    <div class="header-top">
+        <div class="container">
+            <div class="header-top-content">
+                <span class="accessibility-link">
+                    <a href="#">Habilitar accesibilidad para personas con baja visión</a>
+                </span>
+                <nav class="header-nav-top">
+                    <a href="#" class="header-link">Mi Cuenta</a>
+                    <a href="#" class="header-link">Declaración de Accesibilidad</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Header Main - Barra de Búsqueda (FIJA) -->
+    <header class="header">
+        <div class="header-main">
+            <div class="container">
+                <div class="header-content">
+                    <div class="header-left">
+                        <div class="hamburger-menu" id="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="logo">
+                            <div class="logo-container">
+                                <div class="snowfall">
+                                    <span class="snowflake"></span>
+                                    <span class="snowflake"></span>
+                                    <span class="snowflake"></span>
+                                    <span class="snowflake"></span>
+                                    <span class="snowflake"></span>
+                                    <span class="snowflake"></span>
+                                    <span class="snowflake"></span>
+                                    <span class="snowflake"></span>
+                                    <span class="snowflake"></span>
+                                    <span class="snowflake"></span>
+                                </div>
+                                <div class="christmas-tree-bg"></div>
+                                <img src="images/Logo.png" alt="Logo Wahl" class="logo-img">
+                            </div>
+                        </div>
+                    </div>
+
+                    <nav class="nav-menu" id="navMenu">
+                        <a href="#" class="nav-link">Profesional</a>
+                        <a href="#" class="nav-link">Animal</a>
+                        <a href="#" class="nav-link">Sé Distribuidor</a>
+                    </nav>
+
+                    <div class="header-right">
+                        <div class="search-box">
+                            <input type="text" placeholder="Buscar productos...">
+                            <button class="search-btn"><i class="fas fa-search"></i></button>
+                        </div>
+                        <a href="#" class="cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Carousel -->
+        <section class="hero-carousel">
+            <div class="carousel-container">
+                <div class="carousel-slide active">
+                    <div class="carousel-content">
+                        <h1>TIENDA OFICIAL DE WAHL EN MÉXICO</h1>
+                        <p>Cortadoras y recortadoras profesionales de la más alta calidad</p>
+                        <a href="#" class="btn btn-primary">COMPRAR AHORA</a>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="carousel-content">
+                        <h1>ENVÍOS A TODO EL PAÍS</h1>
+                        <p>Recibe tus productos en tu hogar rápidamente</p>
+                        <a href="#" class="btn btn-primary">VER PROMOCIÓN</a>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="carousel-content">
+                        <h1>2 AÑOS DE GARANTÍA</h1>
+                        <p>Todos nuestros productos están garantizados mundialmente</p>
+                        <a href="#" class="btn btn-primary">MÁS INFORMACIÓN</a>
+                    </div>
+                </div>
+
+                <button class="carousel-btn prev" onclick="changeSlide(-1)">❮</button>
+                <button class="carousel-btn next" onclick="changeSlide(1)">❯</button>
+
+                <div class="carousel-indicators">
+                    <span class="indicator active" onclick="gotoSlide(0)"></span>
+                    <span class="indicator" onclick="gotoSlide(1)"></span>
+                    <span class="indicator" onclick="gotoSlide(2)"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cortadoras Section -->
+        <section class="products-section">
+            <div class="container">
+                <div class="products-grid">
+                    <!-- Detailer Cordless Gold -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/detailer cordless gold" alt="Detailer Cordless Gold" class="placeholder-image">
+                        </div>
+                    </div>
+
+                    <!-- Magic Clip Cordless Gold -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/Magic clip cordless gold" alt="Magic Clip Cordless Gold" class="placeholder-image">
+                        </div>
+                    </div>
+
+                    <!-- Legend Cordless -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/Legend cordless.webp" alt="Legend Cordless" class="placeholder-image">
+                        </div>
+                    </div>
+
+                    <!-- Senior Cordless -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/senior cordless.webp" alt="Senior Cordless" class="placeholder-image">
+                        </div>
+                    </div>
+
+                    <!-- Shaver 5 Stars -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/shaver 5 stars.webp" alt="Shaver 5 Stars" class="placeholder-image">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products-titles">
+                    <p>PROFESIONAL</p>
+                    <p>CONSUMER</p>
+                    <p>PET</p>
+                    <p>SENIOR CORDLESS</p>
+                    <p>SHAVER 5 STARS</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Store Section -->
+        <section class="professional-store">
+            <div class="container">
+                <div class="store-content">
+                    <h2>TIENDA WAHL PROFESIONAL</h2>
+                    <p>Aquí puedes encontrar todos los productos de nuestra línea profesional</p>
+                    <a href="#" class="btn btn-primary">IR A LA TIENDA</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Best Sellers Section -->
+        <section class="best-sellers">
+            <div class="container">
+                <h2 class="section-title">Compra nuestros favoritos</h2>
+                
+                <div class="carousel-products">
+                    <button class="carousel-btn prev" onclick="changeProductSlide(-1)">❮</button>
+                    
+                    <div class="products-carousel" id="productsCarousel">
+                        <!-- Cortadora Super Taper 5* -->
+                        <div class="carousel-product">
+                            <div class="product-image">
+                                <img src="images/Cortadora super tapper 5 stars.webp" alt="Cortadora Super Taper 5*" class="placeholder-image">
+                            </div>
+                            <h3>CORTADORA SUPER TAPER 5*</h3>
+                            <p class="price">MXN 2,400.00</p>
+                            <button class="btn btn-small">AGREGAR AL CARRITO</button>
+                        </div>
+
+                        <!-- Vortex Clipper -->
+                        <div class="carousel-product">
+                            <div class="product-image">
+                                <img src="images/Vortex Clipper.webp" alt="Vortex Clipper" class="placeholder-image">
+                            </div>
+                            <h3>VORTEX CLIPPER</h3>
+                            <p class="price">MXN 1,272.00</p>
+                            <button class="btn btn-small">AGREGAR AL CARRITO</button>
+                        </div>
+
+                        <!-- Cortadora Vapor Edición Limitada -->
+                        <div class="carousel-product">
+                            <div class="product-image">
+                                <img src="images/Vapor LI.webp" alt="Cortadora Vapor Edición Limitada" class="placeholder-image">
+                            </div>
+                            <h3>CORTADORA VAPOR EDICIÓN LIMITADA</h3>
+                            <p class="price">MXN 4,068.00</p>
+                            <button class="btn btn-small">AGREGAR AL CARRITO</button>
+                        </div>
+
+                        <!-- Additional Products -->
+                        <div class="carousel-product">
+                            <div class="product-image">
+                                <img src="" alt="Producto" class="placeholder-image">
+                            </div>
+                            <h3>PRODUCTO DESTACADO</h3>
+                            <p class="price">MXN 2,000.00</p>
+                            <button class="btn btn-small">AGREGAR AL CARRITO</button>
+                        </div>
+
+                        <div class="carousel-product">
+                            <div class="product-image">
+                                <img src="images/Legend cordless.webp" alt="Producto" class="placeholder-image">
+                            </div>
+                            <h3>PRODUCTO DESTACADO</h3>
+                            <p class="price">MXN 2,000.00</p>
+                            <button class="btn btn-small">AGREGAR AL CARRITO</button>
+                        </div>
+                    </div>
+
+                    <button class="carousel-btn next" onclick="changeProductSlide(1)">❯</button>
+                </div>
+
+                <div class="view-all">
+                    <a href="#" class="btn btn-secondary">VER TODO</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wahl Education Section -->
+        <section class="education-section">
+            <div class="container">
+                <div class="education-content">
+                    <h2>WAHL EDUCATION</h2>
+                    <p>Conoce nuestros cursos y participa en los eventos de Wahl Education en México</p>
+                    <a href="#" class="btn btn-primary">VER MÁS</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instagram Section -->
+        <section class="instagram-section">
+            <div class="container">
+                <h2 class="section-title">Utiliza #WahlMéxico para compartirnos tu experiencia Wahl</h2>
+                
+                <div class="instagram-grid">
+                    <div class="instagram-post">
+                        <img src="images/insta post 1.png" alt="Instagram post" class="placeholder-image">
+                        <div class="instagram-overlay">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div class="instagram-post">
+                        <img src="images/insta post 2.png" alt="Instagram post" class="placeholder-image">
+                        <div class="instagram-overlay">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div class="instagram-post">
+                        <img src="images/insta post 3.png" alt="Instagram post" class="placeholder-image">
+                        <div class="instagram-overlay">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div class="instagram-post">
+                        <img src="images/insta post 4.png" alt="Instagram post" class="placeholder-image">
+                        <div class="instagram-overlay">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="instagram-cta">
+                    <a href="https://www.instagram.com/wahlprofessionalmexico/" target="_blank" class="btn btn-primary">
+                        @WahlProfessionalMéxico <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Service Section -->
+        <section class="technical-service">
+            <div class="container">
+                <div class="service-content">
+                    <h2>SERVICIO TÉCNICO</h2>
+                    <p>Las cortadoras y recortadoras Wahl tienen <strong>2 años de garantía</strong> en todo el mundo</p>
+                    <a href="#" class="btn btn-secondary">VER MÁS!</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Sobre Nosotros</h3>
+                    <ul>
+                        <li><a href="#">Quiénes Somos</a></li>
+                        <li><a href="#">Nuestra Misión</a></li>
+                        <li><a href="#">Nuestra Visión</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Servicio al Cliente</h3>
+                    <ul>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                        <li><a href="#">Envíos y Devoluciones</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Política de Cookies</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Productos Profesionales</h3>
+                    <ul>
+                        <li><a href="#">Cortadoras</a></li>
+                        <li><a href="#">Recortadoras</a></li>
+                        <li><a href="#">Accesorios</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-logo">
+                    <img src="images/Logo" alt="Logo Wahl" class="logo-img">
+                </div>
+
+                <div class="social-links">
+                    <a href="https://www.instagram.com/wahlprofessionalmexico/" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/WahlMexicoPro/" target="_blank" title="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@wahllatinoamerica1028" target="_blank" title="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+
+                <div class="copyright">
+                    <p>&copy; 2025 Wahl Clipper. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
